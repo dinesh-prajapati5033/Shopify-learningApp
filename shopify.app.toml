@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f9f0d94306df605d635784c95a211a77"
+name = "learning"
+application_url = "https://romantic-francisco-merge-viruses.trycloudflare.com"
+embedded = true
+handle = "learning-104"
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://romantic-francisco-merge-viruses.trycloudflare.com/auth/callback", "https://romantic-francisco-merge-viruses.trycloudflare.com/auth/shopify/callback", "https://romantic-francisco-merge-viruses.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false

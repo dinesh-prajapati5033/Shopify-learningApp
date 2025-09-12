@@ -1,0 +1,26 @@
+{{ learning.css | asset_url | stylesheet_tag }}
+<details>
+<summary> {{ block.settings.title }} </summary>
+<p> {{ block.settings.content }}</p>
+
+</details>
+{% schema %}
+	{
+		"name": "Learning",
+		"target": "section",
+		"settings": [
+			{
+				"type": "text",
+				"id": "title",
+				"label": "title",
+				"default": "Hello world"
+			},
+			{
+				"type": "richtext",
+				"id": "content",
+				"label": "content",
+				"default": "<p>Describe here your Learning</p>"
+			}	
+		]
+	}
+{% endschema %}
