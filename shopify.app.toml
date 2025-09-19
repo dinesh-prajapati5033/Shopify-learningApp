@@ -2,7 +2,7 @@
 
 client_id = "f9f0d94306df605d635784c95a211a77"
 name = "learning"
-application_url = "https://romantic-francisco-merge-viruses.trycloudflare.com"
+application_url = "https://holding-dress-explore-editor.trycloudflare.com"
 embedded = true
 handle = "learning-104"
 
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products"
 
 [auth]
-redirect_urls = ["https://romantic-francisco-merge-viruses.trycloudflare.com/auth/callback", "https://romantic-francisco-merge-viruses.trycloudflare.com/auth/shopify/callback", "https://romantic-francisco-merge-viruses.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://holding-dress-explore-editor.trycloudflare.com/auth/callback", "https://holding-dress-explore-editor.trycloudflare.com/auth/shopify/callback", "https://holding-dress-explore-editor.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
